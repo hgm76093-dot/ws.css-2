@@ -1,0 +1,527 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Martian+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+    --dark: #062630;
+    --light: #faf5f3;
+    --orange: #fea36f;
+    --text: #062630;
+    --muted: #425159;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: #fff;
+}
+
+h1, h2, h3, .brand {
+    font-family: 'Martian Mono', monospace;
+}
+
+.container {
+    max-width: 1120px;
+}
+
+
+/* HERO */
+.hero {
+    background-color: var(--light);
+    background-image: linear-gradient(120deg, #faf5f3, #f5eee8);
+    padding-bottom: 85px;
+    overflow: hidden;
+}
+
+.header {
+    padding: 30px 0 65px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand-icon {
+    font-size: 28px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.hero-text > p {
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 17px 22px;
+    border: 2px solid var(--dark);
+    border-radius: 7px;
+    background: var(--dark);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.primary-button:hover {
+    background: transparent;
+    color: var(--dark);
+}
+
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.social-proof img {
+    width: 110px;
+    height: auto;
+}
+
+.stars {
+    color: #d28a43;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.social-proof p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* COMMON SECTIONS */
+.section {
+    padding: 100px 0;
+}
+
+.section h2,
+.journey h2,
+.membership h2 {
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.3;
+    letter-spacing: -1.5px;
+}
+
+
+/* BENEFITS */
+.benefits-content {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.benefits-image {
+    flex: 1;
+}
+
+.benefits-image img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.benefits-text {
+    flex: 1;
+}
+
+.benefits-text h2 {
+    margin-bottom: 30px;
+}
+
+.benefits-text ul {
+    padding-left: 25px;
+}
+
+.benefits-text li {
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    padding-left: 8px;
+}
+
+
+/* ABOUT */
+.about {
+    background: var(--light);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* JOURNEY */
+.journey {
+    background: var(--dark);
+    color: white;
+}
+
+.journey h2 {
+    margin-bottom: 55px;
+}
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.journey-item {
+    border-top: 1px solid #547078;
+    padding-top: 25px;
+}
+
+.step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-family: 'Martian Mono', monospace;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.journey-item h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+
+/* MEMBERSHIP */
+.membership {
+    background: white;
+}
+
+.membership h2 {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.plan {
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: 35px 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan.featured {
+    background: var(--light);
+    border: 2px solid var(--dark);
+}
+
+.plan h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.price {
+    font-family: 'Martian Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.price span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 25px 0;
+    flex: 1;
+}
+
+.plan li {
+    color: var(--muted);
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.plan li::before {
+    content: "✓";
+    margin-right: 12px;
+    font-weight: 700;
+}
+
+.plan-button {
+    display: block;
+    padding: 15px 10px;
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.plan-button:hover {
+    background: var(--dark);
+    color: white;
+}
+
+
+/* TESTIMONIAL */
+.testimonial {
+    background: var(--light);
+    text-align: center;
+}
+
+.testimonial-content {
+    max-width: 850px;
+}
+
+.testimonial .stars {
+    margin-bottom: 25px;
+}
+
+.testimonial h2 {
+    font-size: clamp(22px, 3vw, 32px);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+
+/* CTA */
+.cta {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta h2 {
+    font-family: 'Martian Mono', monospace;
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 30px;
+}
+
+.cta .primary-button {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--dark);
+}
+
+.cta .primary-button:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.cta .social-proof {
+    justify-content: center;
+}
+
+.cta .social-proof p {
+    color: white;
+}
+
+
+/* FOOTER */
+.footer {
+    background: var(--dark);
+    color: white;
+    border-top: 1px solid #547078;
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-content,
+    .benefits-content,
+    .about-content {
+        gap: 35px;
+    }
+
+    .hero-image img {
+        height: 430px;
+    }
+
+    .journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        padding: 25px 0 45px;
+    }
+
+    .hero {
+        padding-bottom: 55px;
+    }
+
+    .hero-content,
+    .benefits-content,
+    .about-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text > p,
+    .benefits-text li,
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img,
+    .benefits-image img,
+    .about-image img {
+        height: auto;
+        max-height: 420px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey h2 {
+        margin-bottom: 35px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
